@@ -1,0 +1,253 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(74, 138, 74);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin: 5px auto;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bird-name {
+  font-size: 36px; /* Make the bird name bigger */
+  font-weight: bold;
+  margin: 10px 0; /* Adjust the margin to reduce space */
+}
+
+.history-btn, .update-btn, .read-description-btn, .date-btn {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 5px; /* Add some space around buttons */
+}
+
+.history-btn:hover, .update-btn:hover, .read-description-btn:hover, .date-btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+.read-description-btn {
+  margin: 10px;
+}
+
+.update-btn {
+  margin: 10px;
+}
+
+.parent-container {
+  padding: 5px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin: 5px auto;
+}
+
+.parent-container h1 {
+  margin: 2px 0;
+  font-size: 20px;
+}
+
+.parent-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 2px;
+}
+
+.audio-control {
+  margin: 5px 0;
+}
+
+.fun-facts {
+  background-color: #3e3e3e;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.range-map {
+  margin: 10px 0;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.bird-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.table-container {
+  max-height: 400px; /* Set a max-height for the table container */
+  overflow-y: auto; /* Make it scrollable */
+  margin: 20px 0;
+  padding: 10px; /* Add padding for better readability */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: black;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #fff;
+}
+
+.popup-inner {
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 80%; /* Ensure the popup does not take the full width */
+  margin: auto;
+  position: relative;
+}
+
+.close-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute; /* Position the close button */
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover {
+  background-color: darkred;
+}
+
+.description {
+  background-color: #3e3e3e;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.read-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 10px; /* Add some space on top */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.read-btn:hover {
+  background-color: #45a049; /* Darker green background on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.search-filter-container input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.date-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.date-button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.date-button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.date-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bird-table {
+  margin-top: 20px;
+}
