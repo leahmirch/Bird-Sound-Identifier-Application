@@ -106,7 +106,7 @@ Once Docker, Python, npm, and Git are installed, you can clone the repository.
 1. Open a terminal (Command Prompt/PowerShell on Windows, Terminal on macOS).
 2. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/leahmirch/Bird-Sound-Identifier-Application
    ```
 3. Navigate to the project directory:
    ```bash
