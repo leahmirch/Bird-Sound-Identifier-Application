@@ -1,0 +1,11 @@
+Flask==2.0.1
+geocoder==1.38.1
+numpy==1.26.4
+pyaudio==0.2.14
+requests
+birdnetlib==0.16.0
+pandas==2.2.1
+tflite-runtime
+librosa
+resampy
+Werkzeug==2.0.3
